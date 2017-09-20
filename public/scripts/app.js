@@ -88,7 +88,7 @@ function createTweetElement(tweetData) {
 
   //Create footer variables
   var footer = $('<footer>');
-  var pFoot = $('<p>').text(timeCreated);
+  var pFoot = $('<p>').text(timeCreated + " days ago");
   var icons = $('<div>').addClass("icons");
   var i1 = $('<i>').attr("class", "fa fa-flag", "aria-hidden", "true");
   var i2 = $('<i>').attr("class", "fa fa-retweet", "aria-hidden", "true");
