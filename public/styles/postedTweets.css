@@ -15,7 +15,7 @@
   opacity: 1;
 }
 
-.authorInfo {
+.tweet header {
   display: flex;
   align-items: flex-start;
   padding: 8px;
@@ -26,7 +26,7 @@
   padding-left: 1em;
 }
 
-.authorInfo img {
+.tweet header img {
   height: 60px;
   width: 60px
   margin-left: 10px;
@@ -34,7 +34,7 @@
 
 }
 
-.authorInfo h2 {
+.tweet header h2 {
   display: inline;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -42,7 +42,7 @@
   padding-left: 0.5em;
 }
 
-.authorInfo h5 {
+.tweet header h5 {
   float: right;
   font-weight: 300;
   color: grey;
@@ -53,13 +53,13 @@
   padding-left: 1em;
 }
 
-.time {
+.tweet footer {
   border-top: 1px solid #eee;
   display: flex;
   align-items: flex-start;
 }
 
-.time p {
+.tweet footer p {
   font-size: 0.5em;
   padding-left: 0.5em;
   flex-grow: 1;
