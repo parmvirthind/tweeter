@@ -10,7 +10,7 @@ function renderTweets(tweets) {
   $('#tweets-container').empty();
   for(var i in tweets) {
     var $tweets = createTweetElement(tweets[i]);
-    $('#tweets-container').append($tweets);
+    $('#tweets-container').prepend($tweets);
   }
 }
 
@@ -24,9 +24,7 @@ $("form").on("submit", function(event) {
     alert("You have entered more than 140 characters!")
   } else {
     var serialized = $(this).serialize();
-    $.post("/tweets", serialized, function() {
-      loadTweets();
-    });
+    $.post("/tweets", serialized, loadTweets);
   }
 })
 
@@ -80,5 +78,9 @@ function createTweetElement(tweetData) {
   return $tweet;
 }
 
+$('#compose').on('click', function() {
+  $('.new-tweet').slideToggle();
+  $('.new-tweet textarea').focus();
+});
 
 });
