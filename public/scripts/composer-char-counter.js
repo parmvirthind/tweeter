@@ -8,5 +8,6 @@ $ (function() {
     if(charLeft < 0) {
       counter.css("color", "red");
     }
+
   })
 });
