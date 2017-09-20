@@ -45,4 +45,7 @@ nav {
   opacity: 1;
 }
 
+#compose i {
+  padding-right: 0.25em;
+}
 
