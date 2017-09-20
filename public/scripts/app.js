@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
 $ (function () {
 
 function renderTweets(tweets) {
@@ -45,6 +46,9 @@ function createTweetElement(tweetData) {
   var tweetContent = tweetData.content.text;
   var name = tweetData.user.name;
   var timeCreated = tweetData.created_at;
+  timeCreated = moment(timeCreated).fromNow();
+console.log(timeCreated);
+
 
   //Create header variables
   var header = $('<header>');
@@ -64,7 +68,7 @@ function createTweetElement(tweetData) {
 
   //Create footer variables
   var footer = $('<footer>');
-  var pFoot = $('<p>').text(timeCreated + " days ago");
+  var pFoot = $('<p>').text(timeCreated);
   var icons = $('<div>').addClass("icons");
   var i1 = $('<i>').attr("class", "fa fa-flag", "aria-hidden", "true");
   var i2 = $('<i>').attr("class", "fa fa-retweet", "aria-hidden", "true");
