@@ -16,11 +16,18 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
 
+    <link rel="stylesheet" href="/styles/postedTweets.css" type="text/css">
+
+    <link rel="stylesheet" href="/styles/font-awesome-4.7.0/css/font-awesome.css">
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -40,6 +47,31 @@
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
+      </section>
+
+      <section id="postedTweets">
+        <article class="tweet">
+
+          <header class="authorInfo">
+            <img src="http://www.lighthouselabs.ca/static-assets/lighthouse-labs.png">
+            <h2>Bill Fields</h2>
+            <h5>@MrFields</h5>
+          </header>
+
+          <div class="tweetText">
+          <p>Little tweet here</p>
+          </div>
+
+          <footer class="time">
+            <p>10 days ago</p>
+            <div class="icons">
+             <i class="fa fa-flag" aria-hidden="true"></i>
+             <i class="fa fa-retweet" aria-hidden="true"></i>
+             <i class="fa fa-heart" aria-hidden="true"></i>
+            </div>
+          </footer>
+
+        </article>
       </section>
     </main>
 
