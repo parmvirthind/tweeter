@@ -7,19 +7,22 @@
 
 $ (function () {
 
+//Create a directory of tweets and apply to our container
 function renderTweets(tweets) {
   $('#tweets-container').empty();
-  for(var i in tweets) {
+  for (var i in tweets) {
     var $tweets = createTweetElement(tweets[i]);
     $('#tweets-container').prepend($tweets);
   }
 }
 
+
+//Responses based on clicking the 'tweet' button. Ajax post request with callback function if successful
 $("form").on("submit", function(event) {
   event.preventDefault();
   var text = $('textarea[name="text"]').val();
   var textLength = text.length;
-  if(text === "" || text === null) {
+  if (text === "" || text === null) {
     alert("Please enter a tweet!");
   } else if (textLength > 140) {
     alert("You have entered more than 140 characters!")
@@ -31,12 +34,14 @@ $("form").on("submit", function(event) {
   }
 })
 
+//Will retrieve tweets from database
 function loadTweets() {
   $.getJSON('/tweets', function(data) {
     renderTweets(data);
   })
 }
 
+//Calling function to show tweets on initial load
 loadTweets();
 
 
@@ -84,6 +89,7 @@ console.log(timeCreated);
   return $tweet;
 }
 
+//Adds functionality to compose button in navigation bar
 $('#compose').on('click', function() {
   $('.new-tweet').slideToggle();
   $('.new-tweet textarea').focus();
