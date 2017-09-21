@@ -13,12 +13,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   console.log(`Connected to mongodb: ${MONGODB_URI}`);
 
   function getTweets(callback) {
-    db.collection("tweets").find().toArray((err, tweets) => {
-      if (err) {
-        return callback(err);
-      }
-      callback(null, tweets);
-    });
+    db.collection("tweets").find().toArray(callback);
   }
 
   getTweets((err, tweets) => {
@@ -31,13 +26,5 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
 
     db.close();
   });
-
-  // db.collection("tweets").find().toArray((err, results) => {
-  //   if (err) throw err;
-
-  //   console.log("results array:", results);
-
-  //   db.close();
-  // });
 
 });
