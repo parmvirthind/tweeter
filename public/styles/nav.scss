@@ -10,17 +10,22 @@
   color: #e8fdff;
   z-index: 9999;
   display: flex;
-  align-items: flex-start; }
-  #nav-bar .logo {
+  align-items: flex-start;
+
+  .logo {
     height: 80px;
     width: 80px;
-    float: left; }
-  #nav-bar .header {
     float: left;
-    padding-left: 10px;
+  }
+
+  .header {
+    float: left;
+    padding-left:10px;
     font-size: 2em;
     line-height: 250%;
-    flex-grow: 1; }
+    flex-grow: 1;
+  }
+}
 
 #compose {
   margin-top: 1em;
@@ -31,11 +36,14 @@
   background-color: white;
   color: black;
   font-size: 1.05em;
-  opacity: 0.7; }
-  #compose i {
-    padding-right: 0.25em; }
+  opacity: 0.7;
+
+  i {
+    padding-right: 0.25em;
+  }
+}
+
 
 #compose:hover {
-  opacity: 1; }
-
-/*# sourceMappingURL=nav.css.map */
+  opacity:1;
+}
