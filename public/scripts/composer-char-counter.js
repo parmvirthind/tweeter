@@ -1,5 +1,5 @@
 $ (function() {
-  $(".new-tweet form textarea").on("keypress", function() {
+  $(".new-tweet form textarea").on("keyup", function() {
     const charLeft = 140 - $(this).val().length;
 
     const counter = $(this).parent().find(".counter");

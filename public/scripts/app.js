@@ -26,6 +26,8 @@ $("form").on("submit", function(event) {
   } else {
     var serialized = $(this).serialize();
     $.post("/tweets", serialized, loadTweets);
+    $('.new-tweet form textarea').val("");
+    $('.counter').text(140);
   }
 })
 
