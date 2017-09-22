@@ -32,6 +32,11 @@ main {
   overflow: auto;
 }
 
+@media (max-width: 768px) {
+  html {
+    height: auto;
+  }
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

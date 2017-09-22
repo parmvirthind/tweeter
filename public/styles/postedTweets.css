@@ -79,7 +79,7 @@
   opacity: 1;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   #tweets-container {
     width: 400px;
   }

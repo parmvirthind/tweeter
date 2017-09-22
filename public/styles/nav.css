@@ -38,7 +38,7 @@
 #compose:hover {
   opacity: 1; }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   #composetext {
     display: none;
   }
@@ -59,7 +59,9 @@
   }
 
   #nav-bar .header {
-    padding-left: 55px;
+    /*padding-left: 55px;*/
+    padding-left: 0px;
+    text-align: center;
   }
 }
 
