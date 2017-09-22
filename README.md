@@ -8,6 +8,7 @@ A simple and responsive single-page AJAX-based Twitter clone that uses jQuery, H
 
 !["Compose tweet box"](https://github.com/parmvirthind/tweeter/blob/master/docs/Compose%20Tweet.png?raw=true)
 
+!["Mobile-view"](https://github.com/parmvirthind/tweeter/blob/master/docs/Mobile-view.png?raw=true)
 
 ## Dependencies
 
