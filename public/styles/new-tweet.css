@@ -34,3 +34,10 @@
   float: right;
   margin-top: 7px;
 }
+
+
+@media (max-width: 420px) {
+  .container {
+    width: 400px;
+  }
+}

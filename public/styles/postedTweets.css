@@ -2,7 +2,6 @@
   padding-top: 2em;
 }
 
-
 .tweet {
   margin-left: 2em;
   margin-right: 2em;
@@ -80,5 +79,8 @@
   opacity: 1;
 }
 
-
-
+@media (max-width: 420px) {
+  #tweets-container {
+    width: 400px;
+  }
+}

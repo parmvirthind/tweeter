@@ -38,4 +38,29 @@
 #compose:hover {
   opacity: 1; }
 
+@media (max-width: 420px) {
+  #composetext {
+    display: none;
+  }
+  #compose i {
+    padding-right: 0em;
+    font-size: 2em;
+  }
+
+  #compose {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  #nav-bar .logo {
+    height: 60px;
+    width: 60px;
+    margin-top: 1em;
+  }
+
+  #nav-bar .header {
+    padding-left: 55px;
+  }
+}
+
 /*# sourceMappingURL=nav.css.map */
